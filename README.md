@@ -1,22 +1,17 @@
-# Cryptography Mini Project - Block Cipher
+# Cryptography Mini Project
 
-This repository contains a mini project for the course CSI2108 Cryptographic Concepts, focusing on the implementation of a basic symmetric block cipher. The cipher operates on 8-bit blocks and uses a substitution-permutation network (SPN) structure, incorporating a simple S-box, permutation table, and Feistel function.
+This repository depicts the design and implementation of a simple 8-bit block cipher providing symmetric encryption using a substitution-permutation network (SPN), including an S-box, permutation table, and Feistel scheme. The cipher implements and evaluates two principal modes of encryption: Electronic Codebook (ECB) and Cipher Block Chaining (CBC). The report also discusses the mathematics of these modes of encryption, examining the complexity and security aspects of the cipher design. The efficiency and strength of the cipher are demonstrated through the testing of encryption and decryption on sample data. This study emphasizes the relevance of secure encryption approaches to support data confidentiality and data integrity in cryptographic systems.
 
 ## Overview:
-This mini-project demonstrates how to implement a block cipher using symmetric encryption. The cipher encrypts 8-bit blocks with an 8-bit key using basic cryptographic techniques like substitution, permutation, and the Feistel function. Two encryption modes, Electronic Codebook (ECB) and Cipher Block Chaining (CBC), can be explored to understand how they affect data encryption.
+In the current digital era, ensuring that unauthorized individuals cannot access private information is critical in today's organization. The concept of cryptography is essential in establishing this goal. The objective of this project is to develop an uncomplicated block cipher using symmetric cryptography, pertaining that the same key is required to decrypt the available data. The increasing popularity of symmetric ciphers stems from their uncomplicated ability to perform. This report describes the design and assessment of the proposed block cipher with a focus on its two modes of operation, ECB and CBC.
+
+The block cipher manipulates the 8-bit blocks and the presented 8-bit keys in both modes. The design relies on accepted cryptographic concepts. Confusion and diffusion are created through an S-box and a permutation table because the goal is to ensure that even the minimal change in the in-put representation occupies excessive change in the output representation. These two independent components also increase the difficulty of attacking the system by a cryptographical activity.
 
 ## Features:
-8-bit block encryption using symmetric keys.
-Substitution-permutation network (SPN) design.
-Simple 4x4 S-box for substitution.
-Permutation table for bit shuffling.
-Feistel function for encryption transformation.
-Single-round encryption to illustrate block cipher functionality.
-
-## Block Cipher Components:
-Substitution Box (S-box): A simple 4x4 lookup table that substitutes 4-bit values during encryption.
-Permutation Table: A bit shuffling mechanism that reorders the bits in a block.
-Feistel Function: A basic function applying XOR operations to a 4-bit block using the key.
+•	Cipher Design: Develop a symmetric block cipher using substitution, permutation, and the Feistel structure.
+•	Operational Modes: Implement and compare the functionality of ECB and CBC modes.
+•	Encryption and Decryption: Verify the cipher's effectiveness by encrypting and decrypting example inputs.
+•	Documentation: Provide a comprehensive analysis of the system’s architecture, complexity, and security considerations.
 
 ## Requirements:
 Python 3.x
@@ -29,15 +24,12 @@ Clone the repository:
 ### `cd cryptography-miniProject`
 
 ## Usage
-Open the `blockCipher.py` file in a text editor.
+Open the .py files in a text editor.
 
 Modify the block and key variables in the script to experiment with different inputs.
 
 ## Run the Python script:
-### `python blockCipher.py`
+### `python <name>.py`
 The program will print the original 8-bit block and the encrypted block as output.
 
-## Example output:
-Original block: 0b10101100
-Encrypted block: 0b11001110
 
